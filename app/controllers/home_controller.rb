@@ -2,13 +2,13 @@ class HomeController < ApplicationController
   @@cities||= []
 
   def index
-    melbourne = Utc.find_by_value("Australia/Melbourne")
-    tokyo = Utc.find_by_value("Asia/Tokyo")
-    dan = Utc.find_by_value("America/Danmarkshavn")
-    ma = Utc.find_by_value("Asia/Magadan")
-    ab = Utc.find_by_value("America/Anchorage")
-    @@cities = [melbourne, tokyo, ma, dan,ab]
-
+    if !@@cities.any?
+      melbourne = Utc.find_by_value("Australia/Melbourne")
+      tokyo = Utc.find_by_value("Asia/Tokyo")
+      gmt = Utc.find_by_value("Etc/GMT-10")
+      city_list = [melbourne,tokyo, gmt]
+      @@cities = city_list
+    end
     @utcs = Utc.all
   end
 

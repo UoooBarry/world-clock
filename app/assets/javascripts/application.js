@@ -13,8 +13,11 @@
 //= require rails-ujs
 //= require activestorage
 //= require turbolinks
-//= require_tree .
 //= require jquery
+//= require jquery_ujs
+//= require jquery-ui
+//= require_tree .
+
 
 function showinput(){
     var element = document.getElementById("input_group");

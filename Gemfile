@@ -3,6 +3,9 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 ruby '2.5.7'
 
+# pg_search
+gem 'rails-jquery-autocomplete'
+gem 'jquery-ui-rails'
 #jquery
 gem 'jquery-rails'
 gem 'rails-ujs', '~> 0.1.0'
