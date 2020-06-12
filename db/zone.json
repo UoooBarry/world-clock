@@ -1244,6 +1244,7 @@
     "isdst": false,
     "text": "(UTC+10:00) Brisbane",
     "utc": [
+      "etc/UTC+10",
       "Australia/Brisbane",
       "Australia/Lindeman"
     ]
