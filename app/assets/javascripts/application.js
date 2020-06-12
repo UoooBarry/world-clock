@@ -14,3 +14,14 @@
 //= require activestorage
 //= require turbolinks
 //= require_tree .
+//= require jquery
+
+function showinput(){
+    var element = document.getElementById("input_group");
+    var show = element.style.display;
+    if(show == "none"){
+        element.style.display = "block";
+    }else{
+        element.style.display = "none";
+    }
+}

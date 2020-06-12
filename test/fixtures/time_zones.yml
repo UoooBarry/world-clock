@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  value: MyString
+  abbr: MyString
+  offset: 1
+  isdest: 
+  text: MyString
+
+two:
+  value: MyString
+  abbr: MyString
+  offset: 1
+  isdest: 
+  text: MyString

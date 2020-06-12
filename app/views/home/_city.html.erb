@@ -1,0 +1,9 @@
+<table class="table" style="background-color:#262626">
+<% cities.each.with_index do |city, index| %>
+    <tr>
+        <th scope="row"><%= display city.value %> <br> <%= get_offset_of_melb(city.time_zone.offset)%> </th>
+        <td> <%= get_time(city.time_zone.offset, check)%> <br> <%= get_date_different(city.time_zone.offset)%> <span class="dot <%= get_time_mode get_time(city.time_zone.offset, check) %>"></span> </td>
+        <td><%= link_to "x", del_city_path(:index => index), remote: true%></td>
+    </tr>
+<%end%>
+</table>
